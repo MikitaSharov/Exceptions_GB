@@ -9,10 +9,11 @@ public class Main {
         String input = scanner.nextLine();
         String[] inputArray = input.split(" ");
 
-        if (inputArray.length < 6) {
+        int CHECK_LENGTH = 6;
+        if (inputArray.length < CHECK_LENGTH) {
             throw new RuntimeException("Введено меньше данных чем нужно");
         }
-        if (inputArray.length > 6) {
+        if (inputArray.length > CHECK_LENGTH) {
             throw new RuntimeException("Введено больше данных чем нужно");
         }
 
